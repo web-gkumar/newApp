@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -11,6 +11,13 @@ import { MatMenuModule } from '@angular/material/menu';
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header {
+export class Header implements OnInit {
+
+  user: any = {};
+
+  ngOnInit() {
+    this.user = JSON.parse(localStorage.getItem('profile') || '{}');
+
+  }
 
 }
