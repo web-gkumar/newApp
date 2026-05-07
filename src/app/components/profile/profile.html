@@ -1,0 +1,46 @@
+<div class="profile-container">
+
+    <!-- Header -->
+    <mat-card class="profile-header">
+        <div class="header-content">
+            <div class="avatar"></div>
+            <div class="user-info">
+                <h2>Gautam kumar</h2>
+                <p>9716606378</p>
+                <p class="email">kgautam431@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <mat-tab-group animationDuration="0ms">
+            <mat-tab label="ORDERS">
+                <div class="tab-content">
+                    <button mat-flat-button color="primary" class="add-btn">
+                        <mat-icon>add</mat-icon>
+                        Add Items
+                    </button>
+
+                </div>
+            </mat-tab>
+
+            <mat-tab label="FAVORITE">
+                <div class="tab-content">Favorites here</div>
+            </mat-tab>
+
+            <mat-tab label="ABOUT">
+                <div class="tab-content">
+                    <mat-form-field appearance="outline"><mat-label>Enter Your Mobile</mat-label><input matInput placeholder="+91 xxxxxxxxxx"></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your Village</mat-label><input matInput></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your District</mat-label><input matInput></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your State</mat-label><input matInput></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your Pincode</mat-label><input matInput></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your Country</mat-label><input matInput></mat-form-field>
+                    <mat-form-field appearance="outline"><mat-label>Your Full Address</mat-label><textarea matInput></textarea></mat-form-field>
+                    <button matButton="filled">Update Profile</button>
+                </div>
+            </mat-tab>
+
+        </mat-tab-group>
+    </mat-card>
+
+</div>

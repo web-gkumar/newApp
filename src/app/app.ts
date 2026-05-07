@@ -4,14 +4,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatListModule } from '@angular/material/list';
 import { Header } from './components/header/header';
 import { Sidebar } from './components/sidebar/sidebar';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, MatToolbarModule, MatSidenavModule, MatIconModule, MatButtonModule, MatListModule, Sidebar],
+  imports: [RouterOutlet, Header, MatToolbarModule, MatSidenavModule, MatIconModule, MatButtonModule, Sidebar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

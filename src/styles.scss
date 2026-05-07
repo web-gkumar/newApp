@@ -2,11 +2,13 @@
 
 :root {
   @include mat.toolbar-overrides((
-    container-background-color: green,
+    container-background-color: linear-gradient(135deg, #0f5132, #198754),
     container-text-color: white,
   ));
+  --mat-toolbar-standard-height: 48px
 }
 
+*{margin:0;padding:0;box-sizing:border-box;}
 html {
   height: 100%;
   @include mat.theme((
@@ -22,9 +24,10 @@ html {
 body {color-scheme:light;background:var(--mat-sys-surface);color:var(--mat-sys-on-surface);font:var(--mat-sys-body-medium);margin:0;height:100%;}
 
 /* Material Css */
-.container {height:100vh;}
+.container {height:calc(100vh - 48px);}
 .header-spacer {flex:1;}
 .mat-drawer {border-radius:0 !important; width:250px !important;}
+.mdc-list-item__primary-text{display:flex;align-items:center;}
 
 
 
