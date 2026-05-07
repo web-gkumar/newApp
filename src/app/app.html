@@ -1,40 +1,15 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="sidenav.toggle()"><mat-icon style="color:white;">menu</mat-icon></button>
+  <div class="logo">
+    <span style="margin-left:10px;">🌾</span>
+    <h2>Gkumar <small style="opacity:0.7;">kgautam431@gmail.com</small></h2>
+  </div>
+  <span class="header-spacer"></span>
+  <app-header></app-header>
+</mat-toolbar>
+
+
 <mat-sidenav-container class="container">
-  <mat-sidenav #sidenav class="sidenav">
-    <app-sidebar/>
-    <!-- <div class="logo">My App</div>
-
-    <mat-nav-list>
-      <a mat-list-item routerLink="/home">
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
-      </a>
-
-      <a mat-list-item routerLink="/about">
-        <mat-icon>info</mat-icon>
-        <span>About</span>
-      </a>
-
-      <a mat-list-item routerLink="/services">
-        <mat-icon>build</mat-icon>
-        <span>Services</span>
-      </a>
-
-      <a mat-list-item routerLink="/contact">
-        <mat-icon>call</mat-icon>
-        <span>Contact</span>
-      </a>
-    </mat-nav-list> -->
-
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <mat-toolbar>
-      <button mat-icon-button (click)="sidenav.toggle()"><mat-icon style="color:white;">menu</mat-icon></button>
-      <span>My App</span>
-      <span class="header-spacer"></span>
-      <app-header></app-header>
-    </mat-toolbar>
-    <div class="content"><router-outlet></router-outlet></div>
-  </mat-sidenav-content>
-
+  <mat-sidenav #sidenav mode="over"><app-sidebar (click)="sidenav.close()" /></mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
 </mat-sidenav-container>
